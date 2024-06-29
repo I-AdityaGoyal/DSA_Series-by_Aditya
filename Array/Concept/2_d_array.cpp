@@ -20,7 +20,7 @@ int main()
     {
         vector<int> v1;
         
-        for (int j = 0; j < 5; j++)
+        for (int j = 0; j < 15; j++)
         {
             v1.push_back(0);
         }
