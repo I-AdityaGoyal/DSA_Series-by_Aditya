@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
 
-    int n = 1122552211;
+    int n = 112552211;
 
     int rev = 0;
     int dup = n;

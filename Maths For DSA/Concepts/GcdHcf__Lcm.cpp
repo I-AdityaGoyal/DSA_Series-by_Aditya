@@ -28,6 +28,7 @@ int main()
 
     // GCD(a,b) = GCD(a-b, b);
     // GCD(a,b) = GCD(a%b, b);
+    
     int gcd = GCD_HCF(a, b);
 
     cout << "GCD/HCf of " << a << " & " << b << " is: " << gcd << endl;

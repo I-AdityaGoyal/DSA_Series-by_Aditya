@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    int n = 153;
+    int n = 13;
     int temp = n;
     int sum = 0;
 
