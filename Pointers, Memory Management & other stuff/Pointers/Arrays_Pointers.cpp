@@ -29,7 +29,7 @@ int main()
     // arr[i] = *(arr + i)
     // i[arr] = *(i + arr)
 
-    cout << "3rd index: " << arr[3] << " - " << 3 [arr] << endl<< endl;
+    cout << "3rd index: " << arr[3] << " - " << 3[arr] << endl<< endl;
 
 
 

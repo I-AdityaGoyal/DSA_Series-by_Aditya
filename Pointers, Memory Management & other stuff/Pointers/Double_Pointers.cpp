@@ -1,11 +1,11 @@
 #include <iostream>
 using namespace std;
 void update(int **p2) {
-    p2 = p2 + 1; // No Change -> Copy of p2 is created for this scope will not affect p2 outside!
+    // p2 = p2 + 1; // No Change -> Copy of p2 is created for this scope will not affect p2 outside!
 
     // *p2 = *p2 + 1; // Change -> valve of p, means address stored is ++
 
-    // **p2 = **p2 + 1; // Change -> original variable
+    **p2 = **p2 + 1; // Change -> original variable
 }
 
 int main()
@@ -19,8 +19,8 @@ int main()
     cout << **p2 << endl<<endl;
 
     cout << &n << endl;
-    cout << p << endl;
-    cout << *p2 << endl<<endl;
+    cout << p  << endl;
+    cout << *p2<< endl<<endl;
 
     cout << &p << endl;
     cout << p2 << endl;

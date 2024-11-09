@@ -15,9 +15,9 @@ void update(int *ptr)
     cout << "inside ptr after +1 " << ptr << endl;
 }
 
-int getSum(int arr[], int n) { // same as *arr == arr[], addres of that block
+int getSum(int *arr, int n) { // same as *arr == arr[], addres of that block
 
-    cout << endl << "Size : " << sizeof(arr) << endl;
+    cout << endl << "Size : " << sizeof(arr) << endl; // size is 4 or 8 DOC, because arr is passed as a pointer!
 
     int sum = 0;
     for(int i=0;i<n;i++) {
@@ -48,9 +48,11 @@ int main()
 
     int arr[5] = {1,2,3,4,5};
 
+    cout << "Memory Taken by arr of 5 elements: " << sizeof(arr) << endl;
+
     cout<<"Sum of all is: "<< getSum(arr, 5)<<endl;
     
-    cout<<"Sum of a part  is: "<< getSum(arr + 2, 2)<<endl;
+    cout<<"Sum of a part  is: "<< getSum(arr + 3, 2)<<endl;
     
 
 

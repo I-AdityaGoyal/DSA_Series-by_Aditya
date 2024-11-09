@@ -14,7 +14,7 @@ int main()
 
 
 
-    // incerment in normal variables
+    // increment in normal variables
     int num = 10;
     int ab = num;
 
@@ -49,7 +49,9 @@ int main()
     int *p1 = p;
 
     cout << p << " - " << p1 << endl;
-    cout << *p << " - " << *p1 << endl<<endl;
+    cout << *p << " - " << *p1 << endl;
+    cout << "Addres of 1st pointer p: "<< &p << endl;
+    cout << "Addres of 2nd pointer p1: "<< &p1 << endl << endl;
 
 
     // (*ptr)++ will increment the vale of variable
@@ -61,8 +63,10 @@ int main()
     // (*t)++ is same as *t = *t + 1
 
     cout << "before t " << t << endl;
+    cout << "before *t: "<< *t <<endl;
     t = t + 1;
     cout << "after t " << t << endl;
+    cout << "after *t: "<< *t <<endl;
 
     return 0;
 }

@@ -14,6 +14,7 @@ int main()
 
     cout << ptr << endl<<endl; // same, until it got a null char!
 
+    cout << "For Address use &ch: " << &ch << endl;
 
 
     cout << "0th index value: " << *(ptr + 0) << endl; // arr[0]

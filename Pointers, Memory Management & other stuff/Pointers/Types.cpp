@@ -4,7 +4,7 @@ int main()
 {
     // 1 -> NULL Pointers
 
-    // int *p1;        // Contains garbage value
+    
     int *p1 = NULL; // NULL is constant with vaue 0
     int *q = 0;     // Same as above
 
@@ -17,7 +17,7 @@ int main()
     void *ptr;
     int i = 10;
 
-    // cout<<"Act as Null Pointer: "<<ptr<< endl;
+    cout<<"Pointing to a garbage address: "<<ptr<< endl;
     // cout<<*ptr<<endl; // error it cant be dereferenced
 
     // assign int address to void
@@ -32,6 +32,8 @@ int main()
     // 3 -> Wild Pointers
 
     int *p; // when declared but not initialized
+    // Contains garbage value
+    
     int a = 10;
 
     cout<<"Value of A before: "<<a<<endl;
