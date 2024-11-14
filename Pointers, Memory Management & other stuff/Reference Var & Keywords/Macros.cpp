@@ -6,7 +6,7 @@ using namespace std;
 
 
 // 2-> Defining Inline Macro Functions
-#define AREA_OF_CIRCLE(radius) (PI * (radius) * (radius))
+#define AREA_OF_CIRCLE(radius) (PI * radius * radius)
 
 
 // 3-> Conditional Expressions in Macros
@@ -15,7 +15,7 @@ using namespace std;
 
 // 4-> Multi-Line Macros
 #define MAX(a, b) \
-    ((a) > (b) ? (a) : (b))
+    (a > b ? a : b)
 
 // Use the '\' character to break macros into multiple lines for readability.
 

@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void print(int arr[], int n, int start = 0)
+void print(int arr[], int n = 5, int start)
 {
 
     for (int i = start; i < n; i++)
