@@ -8,7 +8,7 @@ void TakeInput(int **arr, int &row, int &col)
         for (int j = 0; j < col; j++)
         {
             cout << "Value for index " << i << j << " :";
-            cin >> arr[i][j];
+            cin >> *(*(arr + i) + j);
         }
     }
 }
@@ -36,6 +36,7 @@ int main()
     cin >> col;
 
     int **arr = new int *[row];
+
     for (int i = 0; i < row; i++)
     {
         arr[i] = new int[col];
@@ -44,8 +45,6 @@ int main()
     TakeInput(arr, row, col);
     cout << endl;
     print(arr, row, col);
-
-
 
     //  Releasing Memory
     // 1. Free Memory for each array at i (arr[i]) -> int*arr[i]

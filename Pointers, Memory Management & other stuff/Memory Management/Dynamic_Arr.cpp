@@ -36,5 +36,7 @@ int main()
     int ans = getSum(arr, n);
     cout<< "Sum of Arr: "<< ans;
 
+    delete []arr;
+
     return 0;
 }

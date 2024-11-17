@@ -19,11 +19,11 @@ int main()
     }
 
 
-    // Case-2: Manually Memory Free
+    // // Case-2: Manually Memory Free
     while (true)
     {
         int *ptr = new int;
-        // delete ptr;
+        delete ptr;
     }
 
     return 0;
