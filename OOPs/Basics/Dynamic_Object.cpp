@@ -20,5 +20,7 @@ int main()
     cout << "Father: " << ram->Fname << endl;
     cout << "Age: " << (*ram).age << endl;
 
+    delete ram;
+
     return 0;
 }
