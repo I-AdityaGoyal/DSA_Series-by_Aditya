@@ -3,7 +3,6 @@ using namespace std;
 
 class Customer
 {
-
     string name;
     int acc_no;
     int balance;
@@ -11,7 +10,9 @@ class Customer
 public:
 
     //Inline Constructor
-    Customer(string n, int a, int b): name(n), acc_no(a), balance(b){}
+    Customer(string n, int a, int b): name(n), acc_no(a), balance(b){
+        cout<<"Inline"<<endl;
+    }
 
     // Declaring the constructor
     // Definiton will be provided outside

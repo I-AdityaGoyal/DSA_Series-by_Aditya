@@ -1,18 +1,20 @@
 #include <iostream>
 using namespace std;
 
-class Person
+class Student
 {
 public:
     string Mname;
     string Fname;
     int age;
     int addharno;
+
+
 };
 
 int main()
 {
-    Person ram;
+    Student ram;
     ram.Mname = "Kaushalya";
     ram.Fname = "Dasharath";
     ram.age = 3;

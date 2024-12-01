@@ -3,6 +3,7 @@ using namespace std;
 
 class Customer
 {
+
 private:
     int acc_no;
     int *balance;
@@ -20,14 +21,15 @@ public:
     {
         acc_no = c.acc_no;
         balance = c.balance; // Shallow copy: copies the pointer
-        cout << "Shallow Copy Constructor Called!" << endl;
+        cout << "\nShallow Copy Constructor Called!" << endl;
     }
 
     // Destructor
     ~Customer()
     {
+        
+        cout << "Destructor Called for Account Number: " << acc_no << " & Balance: " << this->balance << endl;
         delete balance; // Release allocated memory
-        cout << "Destructor Called for Account Number: " << acc_no << endl;
     }
 
     // Function to modify balance directly
@@ -47,13 +49,12 @@ int main()
 {
     // Original Customer
     Customer *c1 = new Customer(100, 5220);
-    cout << "Original Customer (c1): ";
-    c1->printDetails(); 
+    cout << "\nOriginal Customer (c1): ";
+    c1->printDetails();
 
-    
     // Shallow Copy
     Customer c2 = *c1; // Create a shallow copy using dereferenced pointer
-    cout << "Shallow Copy (c2): ";
+    cout << "\nShallow Copy (c2): ";
     c2.printDetails();
 
     // Modify original balance to see shallow copy impact

@@ -3,6 +3,7 @@ using namespace std;
 
 class Customer
 {
+    
 private:
     int acc_no;
     int *balance;

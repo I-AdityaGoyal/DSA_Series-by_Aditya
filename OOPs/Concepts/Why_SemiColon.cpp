@@ -13,7 +13,7 @@ public:
         cout<<a;
     }
 
-}obj(23);
+} obj(3);
 
 
 int main()

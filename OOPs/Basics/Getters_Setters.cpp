@@ -11,38 +11,46 @@ private:
 
 public:
     // Setters
-    void setMname(string s){
+
+    void setMname(string s)
+    {
         Mname = s;
     }
-    void setFname(string Fname){
-        Fname = Fname;
+    void setFname(string f)
+    {
+        Fname = f;
     }
-    void setage(int a){
+    void setage(int a)
+    {
         age = a;
     }
-    void setaddhar(int addharno){
+    void setaddhar(int addharno)
+    {
         addharno = addharno;
     }
 
     // Getters
 
-    string getMname(){
+    string getMname()
+    {
         return Mname;
     }
-    string getFname(){
+    string getFname()
+    {
         return Fname;
     }
-    int getage(){
+    int getage()
+    {
         return age;
     }
-    int getaddhar(int pin = 0){
+    int getaddhar(int pin = 0)
+    {
         if (pin == 456)
             return addharno;
 
         return 0;
     }
 };
-
 
 int main()
 {

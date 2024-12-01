@@ -1,0 +1,28 @@
+-------------------------------------- What Are Exceptions in C++? -----------------------------------------------------
+
+    An exception is an issue that occurs during the execution of a program, disrupting its normal flow.
+    For example, trying to divide by zero or accessing invalid memory might cause exceptions.
+    Without handling them, the program will terminate unexpectedly.
+
+
+--------------------------------- Key Components of Exception Handling in C++: ------------------------------------------
+
+-->> " try " Block:
+        This is a block of code where you write statements that might cause an exception.
+        If an exception occurs inside the try block, the program will immediately stop executing the 
+        rest of the block and look for a corresponding catch block.
+
+-->> " throw " Statement:       
+        The throw keyword is used to indicate that an exception has occurred.
+        You can throw various types of exceptions, such as integers, strings, or even user-defined objects.
+
+-->> " catch " Block:
+        A catch block handles the exceptions thrown by the try block.
+        You can write multiple catch blocks to handle different types of exceptions
+
+
+------------------------------------------- How It Works Together: --------------------------------------------------------
+
+    1.  Code in the try block runs normally until an exception occurs.
+    2.  When a throw is encountered, the program looks for a matching catch block.
+    3.  The catch block processes the exception and prevents the program from crashing.

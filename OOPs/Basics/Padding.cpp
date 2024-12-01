@@ -2,7 +2,11 @@
 using namespace std;
 class temp
 {
-    
+    // char c;
+    // double d;
+    // int a;
+    // float f;
+    // char b;
 };
 
 int main()

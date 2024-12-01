@@ -3,7 +3,6 @@ using namespace std;
 
 class Customer
 {
-
     string name;
     int acc_no;
     int balance;
