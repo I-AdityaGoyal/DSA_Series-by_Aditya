@@ -1,12 +1,12 @@
 #include <iostream>
-using namespace std;
+// using namespace std;
 
 // first name space
 namespace first_space
 {
     void func()
     {
-        cout << "Inside first_space" << endl;
+        std ::cout << "Inside first_space" << std ::endl;
     }
 }
 
@@ -15,7 +15,7 @@ namespace second_space
 {
     void func()
     {
-        cout << "Inside second_space" << endl;
+        std ::cout << "Inside second_space" << std ::endl;
     }
 }
 
@@ -25,6 +25,8 @@ int main()
 {
     // This calls function from first name space.
     func();
+
+    std::cout << std::endl;
 
     // Calls function from second name space.
     second_space ::func();

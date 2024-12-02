@@ -5,12 +5,15 @@ using namespace std;
 namespace first
 {
     int val1 = 500;
+    // val1 = 9;Can Not be update
 }
 
 // rest part of the first namespace
 namespace first
 {
     int val2 = 501;
+    // val1 = 9;   Can Not be update
+
 }
 
 int main()
