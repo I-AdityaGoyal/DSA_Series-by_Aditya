@@ -62,9 +62,13 @@ int main()
     Animal *a;
     for (int i = 0; i < vec.size(); i++)
     {
-
         a = vec[i];
         a->speak();
+    }
+
+    for (auto *animal : vec)
+    {
+        delete animal;
     }
 
     return 0;

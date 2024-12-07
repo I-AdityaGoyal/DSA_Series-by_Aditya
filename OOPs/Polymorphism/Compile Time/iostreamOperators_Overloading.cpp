@@ -40,12 +40,6 @@ class Complex
 public:
     Complex() {}
 
-    Complex(int real, int imag)
-    {
-        this->real = real;
-        this->imag = imag;
-    }
-
     Complex operator+(Complex &C)
     {
         Complex temp;

@@ -24,6 +24,9 @@ public:
 int main()
 {
     Class2 obj;
+
+    // obj.data = 34; // will be treated as protected
+
     obj.display();
     obj.updateData(80);
     obj.display();

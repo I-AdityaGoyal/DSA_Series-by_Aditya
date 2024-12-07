@@ -24,6 +24,9 @@ public:
 int main()
 {
     Class2 obj;
+
+    // obj.data = 12; // can't access it's a private data member for class2
+
     obj.display();
     obj.updateData(30);
     obj.display(); // Accessible only through Class2 methods

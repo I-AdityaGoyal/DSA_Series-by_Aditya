@@ -13,6 +13,8 @@ public:
 
 class Class2 : protected Class1
 {
+    // Both getData() & setData() inherited as protected here can't use directlty!
+    
 public:
     void display()
     {

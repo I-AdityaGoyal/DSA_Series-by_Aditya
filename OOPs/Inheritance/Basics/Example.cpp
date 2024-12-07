@@ -1,78 +1,68 @@
 #include <iostream>
 #include <string>
-
 using namespace std;
 
-class School
+// Base class: Person
+class Person
 {
-private:
-    string schoolName; // Accessible only within the School class
-
 protected:
-    string schoolAddress; // Accessible in derived classes
+    string name;
+    int age;
 
 public:
-    // Constructor with const references for safety
+    Person(const string &name, int age) : name(name), age(age) {}
 
-    School(const string &name, const string &address)
+    void introduce()
     {
-        schoolName = name;
-        schoolAddress = address;
-    }
-
-    void displaySchool()
-    {
-        cout << "School: " << schoolName << ", Address: " << schoolAddress << endl;
+        cout << "Hi, I am " << name << ", and I am " << age << " years old." << endl;
     }
 };
 
-class Teacher : public School
+// Derived class: Teacher
+class Teacher : public Person
 {
-protected:
-    string teacherName; // Accessible in derived classes
+private:
+    string subject; // Private: Can only be accessed within the Teacher class
 
 public:
-    Teacher(const string &name, const string &address, const string &tName) : School(name, address)
-    {
-        teacherName = tName;
-    }
+    Teacher(const string &name, int age, const string &subject)
+        : Person(name, age), subject(subject) {}
 
-    void displayTeacher()
+    void teach()
     {
-        cout << "Teacher: " << teacherName << " works at " << schoolAddress << endl;
+        cout << "I teach " << subject << "." << endl;
     }
 };
 
-class Student : public School
+// Derived class: Student
+class Student : public Person
 {
 private:
-    string studentName; // Only accessible within Student class
+    int grade; // Private: Only accessible within the Student class
 
 public:
-    Student(const string &name, const string &address, const string &sName)
-        : School(name, address), studentName(sName) {}
+    Student(const string &name, int age, int grade)
+        : Person(name, age), grade(grade) {}
 
-    void displayStudent()
+    void study()
     {
-        cout << "Student: " << studentName << " studies at " << schoolAddress << endl;
+        cout << "I am in grade " << grade << " and I love studying!" << endl;
     }
 };
 
 int main()
 {
-    // Create Teacher and Student objects
-    Teacher teacher("ABC School", "148/5, A Shiv Nagar", "Mrs. Radhika");
-    Student student("ABC School", "148/5, A Shiv Nagar", "Krishna");
+    // Creating a Teacher object
+    Teacher teacher("Mr. SHIVA", 40, "Mathematics");
+    teacher.introduce(); // Inherited from Person
+    teacher.teach();     // Specific to Teacher
 
-    // Display details
+    cout << endl;
 
-    cout << endl;
-    teacher.displaySchool(); // From School base class
-    cout << endl;
-    teacher.displayTeacher(); // From Teacher class
-    cout << endl;
-    student.displayStudent(); // From Student class
-    cout << endl;
+    // Creating a Student object
+    Student student("RAM", 15, 10);
+    student.introduce(); // Inherited from Person
+    student.study();     // Specific to Student
 
     return 0;
 }

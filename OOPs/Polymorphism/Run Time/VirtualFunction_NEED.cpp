@@ -3,7 +3,6 @@ using namespace std;
 
 class Animal
 {
-
 public:
     void speak()
     {
@@ -29,11 +28,11 @@ int main()
     // d.speak();
 
     // Parent Class pointer can store child class address!
-    // Animal *p;
-    // p = new Dog();
+    Animal *p;
+    p = new Dog();
 
-    // p->speak();
+    p->speak(); // Calling For Base Class Function
 
-    // delete p;
+    delete p;
     return 0;
 }

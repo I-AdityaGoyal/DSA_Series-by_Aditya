@@ -15,6 +15,7 @@ public:
         cout << "Accessing public member from Class1 as protected: " << data << endl;
     }
 
+
     void updateData(int value)
     {
         data = value; // Accessible as protected
@@ -24,6 +25,8 @@ public:
 int main()
 {
     Class2 obj;
+    
+    
     obj.display();
     obj.updateData(40);
     obj.display(); // Accessible only through Class2 methods
