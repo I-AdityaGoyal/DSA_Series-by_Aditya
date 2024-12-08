@@ -21,12 +21,14 @@ public:
 
 int main()
 {
-    // Animal a;
-    // a.speak();
+    /*
+    Animal a;
+    a.speak();
 
-    // Dog d;
-    // d.speak();
-
+    Dog d;
+    d.speak();
+    */
+   
     // Parent Class pointer can store child class address!
     Animal *p;
     p = new Dog();

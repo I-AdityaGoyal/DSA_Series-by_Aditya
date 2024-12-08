@@ -9,6 +9,8 @@ public:
 
 class Class2 : protected Class1
 {
+
+
 public:
     void display()
     {
@@ -26,6 +28,7 @@ int main()
 {
     Class2 obj;
     
+    // obj.data = 3;
     
     obj.display();
     obj.updateData(40);

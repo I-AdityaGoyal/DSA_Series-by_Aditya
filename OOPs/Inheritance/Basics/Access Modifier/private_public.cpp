@@ -18,6 +18,9 @@ class Class2 : public Class1
 int main()
 {
     Class2 obj;
+
+    // obj.data = 9;
+
     obj.setData(50);
     cout << "Accessing private member through Class1 methods: " << obj.getData() << endl;
 

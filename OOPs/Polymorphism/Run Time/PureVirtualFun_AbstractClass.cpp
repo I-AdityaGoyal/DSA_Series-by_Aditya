@@ -16,7 +16,7 @@ class Animal
 {
 
 public:
-    virtual void speak() = 0;
+    virtual void speak() = 0; // Pure Virtual Function()
 };
 
 class Dog : public Animal
@@ -48,6 +48,11 @@ public:
 
 int main()
 {
+    // Dog d;
+
+    // Animal *r = &d;
+
+    // r->speak();
     // This allows different animals to have their own behavior while ensuring they all share the same interface.
 
     vector<Animal *> vec;

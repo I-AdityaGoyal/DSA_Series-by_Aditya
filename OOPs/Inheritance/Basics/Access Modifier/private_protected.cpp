@@ -30,6 +30,8 @@ public:
 int main()
 {
     Class2 obj;
+
+
     obj.display();
     obj.updateData(70);
     obj.display();

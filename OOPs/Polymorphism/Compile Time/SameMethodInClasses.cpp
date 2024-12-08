@@ -4,7 +4,7 @@ using namespace std;
 class Base
 {
 public:
-    void print()
+     void print()
     {
         cout << "Base class print function\n";
     }

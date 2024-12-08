@@ -13,7 +13,7 @@ public:
     int age;
 };
 
-class Youtuber : public virtual Person
+class Youtuber : public  virtual Person
 {
 public:
     int subs;
