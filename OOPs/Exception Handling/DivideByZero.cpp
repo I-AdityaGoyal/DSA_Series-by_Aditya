@@ -24,7 +24,7 @@ int main()
 
     catch (const char *e)
     {
-        cout << "Exception " << e << endl;
+        cout << "Exception " << e << endl; // use *e for char at that index;
     }
 
     return 0;

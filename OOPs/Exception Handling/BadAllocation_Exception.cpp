@@ -5,14 +5,14 @@ using namespace std;
 
 
 // Default Main 
-int main()
-{
-    int s = 1e9;
-    int *ptr = new int[s];
-    cout << "Memory Allocated: " << endl;
+// int main()
+// {
+//     int s = 1e9;
+//     int *ptr = new int[s];
+//     cout << "Memory Allocated: " << endl;
 
-    delete[] ptr;
-}
+//     delete[] ptr;
+// }
 
 /*
 ---------------------------------- Not Exactaly -> But Inside Exception Class -------------------------------
@@ -34,7 +34,7 @@ public:
 };
 */
 
-/*
+
 int main()
 {
     try
@@ -52,4 +52,3 @@ int main()
     return 0;
 }
 
-*/

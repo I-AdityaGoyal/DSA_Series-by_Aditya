@@ -56,12 +56,15 @@ int main()
         // Error can occur into these lines!
         C1.deposit(300);
         C1.withdraw(78333);
+        C1.deposit(550);
     }
     // Catch is required after Try Block!
     catch (const char *e)
     {
         cout << "Exception Occured: " << e << endl;
     }
+
+    cout<<"I'm On!"<<endl;
 
     /*
     ->  Const: Using Constant So, No one can change the throwed message
