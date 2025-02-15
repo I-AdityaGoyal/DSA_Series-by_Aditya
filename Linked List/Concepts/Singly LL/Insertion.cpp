@@ -83,13 +83,11 @@ void insertAtPosition(Node *&head, Node *&tail, int data, int pos)
     }
 
     Node *temp = head;
-    int count = 1;
 
     // Traverse to the (pos-1)th node or the last node
-    while (count < pos - 1 && temp->next != NULL)
+    for (int i = 1; i < pos - 1 && temp != NULL; i++)
     {
         temp = temp->next;
-        count++;
     }
 
     // If inserting at tail

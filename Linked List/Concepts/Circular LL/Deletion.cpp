@@ -71,6 +71,7 @@ void deleteNode(Node *&head, int value)
     if (curr == prev)
         head = NULL;
 
+    // If the node to delete is head
     else if (curr == head)
         head = prev;
 
